@@ -6,45 +6,48 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>makeup</title>
    <link rel="stylesheet" href="css/style.min.css">
-   <script src="js/main.min.js" defer></script>
+   <!-- <script src="js/main.min.js" defer></script> -->
 </head>
 
 <body>
-
-   <header class="header section-page section-bg" style="background-image: url('images/header-bg.jpg');">
+   <section class="hero section-bg" style="background-image: url('images/header-bg.jpg');">
       <div class="container">
-
-         <nav class="menu">
-            <div class="menu__btn">
-               <span></span>
-            </div>
-            <ul class="menu__list">
-               <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Услуги</a>
-               </li>
-               <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Портфолио</a>
-               </li>
-               <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Контакты</a>
-               </li>
-            </ul>
-         </nav>
-
-         <div class="header__main">
-            <div class="header__inner">
-               <h1 class="header__inner-title title animate__animated animate__zoomIn">
+         <div class="hero__main">
+            <div class="hero__inner">
+               <h1 class="hero__inner-title title animate__animated animate__zoomIn">
                   Творческая студия
                   <span>Илоны Счастливцевой</span>
                </h1>
-               <div class="header__inner-text animate__animated animate__zoomInRight">
+               <div class="hero__inner-text animate__animated animate__zoomInRight">
                   Добро пожаловать в мир красоты, фантазии, творчества и креативных идей.
                </div>
-               <div class="header__inner-buttons">
-                  <a class="header__inner-btn" href="#">Консультация</a>
-                  <a class="header__inner-btn" href="#">Подарить сертификат</a>
+               <div class="hero__inner-buttons">
+                  <a class="hero__inner-btn" href="#">Консультация</a>
+                  <a class="hero__inner-btn" href="#">Подарить сертификат</a>
                </div>
             </div>
+         </div>
+      </div>
+   </section>
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+            <div class="menu__btn">
+               <span></span>
+            </div>
+            <nav class="header__menu menu">
+               <ul class="menu__list">
+                  <li class="menu__list-item">
+                     <a class="menu__list-link" href="#">Услуги</a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a class="menu__list-link" href="#">Портфолио</a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a class="menu__list-link" href="#">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
          </div>
       </div>
    </header>
@@ -529,13 +532,16 @@
                   </div>
                </div>
                <div class="questions__item-text">
-                  <p>Если чего-то нет, то заранее до курса докупать ничего не надо, так как на курсе есть
-                     подготовительная
-                     неделя и разбор косметички. Вы вместе с преподавателем определите чего не хватает и выберите
-                     продукты, которые
-                     подходят именно вам и которые будут устраивать вас по цене.
-                  <p>В рекомендованных продуктах собраны все ценовые сегменты, поэтому вы без труда
-                     найдете для себя как бюджетные варианты так и дорогой люкс.</p>
+                  <div class="questions__item-inner">
+                     <p>Если чего-то нет, то заранее до курса докупать ничего не надо, так как на курсе есть
+                        подготовительная
+                        неделя и разбор косметички. Вы вместе с преподавателем определите чего не хватает и выберите
+                        продукты, которые
+                        подходят именно вам и которые будут устраивать вас по цене.
+                     <p>В рекомендованных продуктах собраны все ценовые сегменты, поэтому вы без труда
+                        найдете для себя как бюджетные варианты так и дорогой люкс.
+                     </p>
+                  </div>
                </div>
             </div>
             <div class="questions__item">
@@ -549,10 +555,12 @@
                   </div>
                </div>
                <div class="questions__item-text">
-                  <p>В течение всего курса вам будет помогать куратор - преподаватель курса и профессиональный визажист.
-                     Куратор будет
-                     работать с вами индивидуально, вы всегда сможете получить консультацию.</p>
-                  <p>Преподаватель будет проверять ваши домашние задания, отвечать на вопросы и исправлять ошибки.</p>
+                  <div class="questions__item-inner">
+                     <p>В течение всего курса вам будет помогать куратор - преподаватель курса и профессиональный визажист.
+                        Куратор будет
+                        работать с вами индивидуально, вы всегда сможете получить консультацию.</p>
+                     <p>Преподаватель будет проверять ваши домашние задания, отвечать на вопросы и исправлять ошибки.</p>
+                  </div>
                </div>
             </div>
             <div class="questions__item">
@@ -566,12 +574,14 @@
                   </div>
                </div>
                <div class="questions__item-text">
-                  <p>Обучение рассчитано на тех девочек, девушек, женщин которые хотят выглядеть стильно модно и
-                     эффектно в
-                     любое время дня и года.</p>
-                  <p>Всем, кто хочет научиться правильно подбирать себе макияж для различных случаев и с легкостью
-                     выполнять его.</p>
-                  <p>Для занятий не требуется специальных знаний или подготовки – мы обучаемся с “нуля”.</p>
+                  <div class="questions__item-inner">
+                     <p>Обучение рассчитано на тех девочек, девушек, женщин которые хотят выглядеть стильно модно и
+                        эффектно в
+                        любое время дня и года.</p>
+                     <p>Всем, кто хочет научиться правильно подбирать себе макияж для различных случаев и с легкостью
+                        выполнять его.</p>
+                     <p>Для занятий не требуется специальных знаний или подготовки – мы обучаемся с “нуля”.</p>
+                  </div>
                </div>
             </div>
             <div class="questions__item">
@@ -585,13 +595,16 @@
                   </div>
                </div>
                <div class="questions__item-text">
-                  <p>Самые востребованные на сегодняшний день:</p>
-                  <p>Дневной, который займет у вас утром минимум времени
-                     Голливудский макияж (стрелки и красная помада)
-                     Вечерний макияж с использованием пигментов слюды и глиттеров
-                     И конечно же Смоки Айс во всём его многообразии.Lorem ipsum dolor sit amet, consectetur adipiscing
-                     elit. Phasellus nisi, id non ultrices vitae.
-                     Sagittis vitae, ac nunc ornare tempus dolor suspendisse posuere.</p>
+                  <div class="questions__item-inner">
+                     <p>Самые востребованные на сегодняшний день:</p>
+                     <p>Дневной, который займет у вас утром минимум времени
+                        Голливудский макияж (стрелки и красная помада)
+                        Вечерний макияж с использованием пигментов слюды и глиттеров
+                        И конечно же Смоки Айс во всём его многообразии.Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Phasellus nisi, id non ultrices vitae.
+                        Sagittis vitae, ac nunc ornare tempus dolor suspendisse posuere.
+                     </p>
+                  </div>
                </div>
             </div>
             <div class="questions__item">
@@ -605,9 +618,11 @@
                   </div>
                </div>
                <div class="questions__item-text">
-                  <p>Определять морфологию лица внутреннюю и внешнюю
-                     Понимать основные горизонтали, которые помогают выравнивать асимметрию в строении брови.</p>
-                  <p>Уметь определять структуру волоска брови, его цвет и температуру</p>
+                  <div class="questions__item-inner">
+                     <p>Определять морфологию лица внутреннюю и внешнюю
+                        Понимать основные горизонтали, которые помогают выравнивать асимметрию в строении брови.</p>
+                     <p>Уметь определять структуру волоска брови, его цвет и температуру</p>
+                  </div>
                </div>
             </div>
          </div>
@@ -623,43 +638,42 @@
             <div class="footer__column">
                <ul class="footer__column-menu">
                   <li class="footer__column-item">
-                     <a href="#">Главная</a>
-                  </li>
-
-                  <li class="footer__column-item">
-                     <a href="#">О нас</a>
+                     <a class="footer__column-link" href="#">Главная</a>
                   </li>
                   <li class="footer__column-item">
-                     <a href="#">Подарочный
-                        <span>сертификат</span></a>
-                  </li>
-               </ul>
-            </div>
-            <div class="footer__column">
-               <ul class="footer__column-menu">
-                  <li class="footer__column-item">
-                     <a href="#">Обучающие курсы</a>
-                  </li>
-
-                  <li class="footer__column-item">
-                     <a href="#">График работы</a>
+                     <a class="footer__column-link" href="#">О нас</a>
                   </li>
                   <li class="footer__column-item">
-                     <a href="#">Полезные ссылки</a>
+                     <a class="footer__column-link" href="#">Подарочный
+                        <span>сертификат</span>
+                     </a>
                   </li>
                </ul>
             </div>
             <div class="footer__column">
                <ul class="footer__column-menu">
                   <li class="footer__column-item">
-                     <a href="mailto:ilona@gmail.com">ilona@gmail.com</a>
+                     <a class="footer__column-link" href="#">Обучающие курсы</a>
+                  </li>
+                  <li class="footer__column-item">
+                     <a class="footer__column-link" href="#">График работы</a>
+                  </li>
+                  <li class="footer__column-item">
+                     <a class="footer__column-link" href="#">Полезные ссылки</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__column">
+               <ul class="footer__column-menu">
+                  <li class="footer__column-item">
+                     <a class="footer__column-link" href="mailto:ilona@gmail.com">ilona@gmail.com</a>
                   </li>
 
                   <li class="footer__column-item">
-                     <a href="tel:380950000000">+380950000000</a>
+                     <a class="footer__column-link" href="tel:380950000000">+380950000000</a>
                   </li>
                   <li class="footer__column-item">
-                     <a href="tel:380977700000">+380977700000</a>
+                     <a class="footer__column-link" href="tel:380977700000">+380977700000</a>
                   </li>
                </ul>
             </div>
@@ -683,7 +697,8 @@
             Заказать звонок
          </button>
       </form>
-   </div>   
+   </div>
+   <script src="js/main.min.js" defer></script>
 </body>
 
 </html>
